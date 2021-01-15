@@ -253,3 +253,41 @@ li {
 
   animation: necoarc-hover 0.1s steps(3) infinite;
 }
+
+@keyframes roa {
+  from {background-position-x: 0px;}
+  to {background-position-x: -1622px;}
+}
+
+.roa {
+  background: url('../images/anim-sprite/aokoroa.png') no-repeat 0px -8px;
+  width: 320px;
+  height: 208px;
+  margin-left: 100px;
+
+  animation: roa 0.4s steps(5) infinite;
+}
+
+@keyframes aoko {
+  from {background-position-x: 0px;}
+  to {background-position-x: -1025px;}
+}
+
+.aoko {
+  background: url('../images/anim-sprite/aokoroa.png') no-repeat 0px -230px;
+  width: 200px;
+  height: 206px;
+  position: absolute;
+
+  right: 200px;
+
+  z-index: -1;
+
+  animation: aoko 0.4s steps(5) infinite;
+}
+
+.aokoroa-div {
+  height: 209px;
+
+  float: right;
+}
