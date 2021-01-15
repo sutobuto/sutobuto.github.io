@@ -17,7 +17,7 @@ figure {
   border: 1px solid black
 }
 
-.sidenav {
+nav {
   height: 100%;
   width: 310px;
   position: fixed;
@@ -86,12 +86,9 @@ figure {
   color: white;
 }
 
-.content-h {
+article {
   padding: 20px;
   color: black;
-}
-
-.h-top {
   padding-top: 100px;
 }
 
@@ -173,57 +170,86 @@ li {
 
 .sidenav-divtwt {
   display: inline-block;
-  background: url('../images/socmed/twitter-gray.png') no-repeat;
-  background-size: 100px 100px;
-  width: 100px;
-  height: 100px;
+  background: url('../images/socmed/socmed-sprite.png') no-repeat -80px -81px;
+  width: 74px;
+  height: 73px;
+
+  margin: 15px 20px;
 }
 
 .sidenav-divfb {
   display: inline-block;
-  background: url('../images/socmed/facebook-gray.png') no-repeat;
-  background-size: 69px 69px;
-  width: 69px;
-  height: 85px;
+  background: url('../images/socmed/socmed-sprite.png') no-repeat -160px -80px;
+  width: 74px;
+  height: 75px;
 
-  margin: 0px -20px;
+  margin: 15px -20px;
 }
 
 .sidenav-divyt {
   display: inline-block;
-  background: url('../images/socmed/youtube-gray.png') no-repeat;
-  background-size: 61px 61px;
-  width: 61px;
-  height: 81px;
+  background: url('../images/socmed/socmed-sprite.png') no-repeat 0px -80px;
+  width: 77px;
+  height: 75px;
 
-  margin: 0px 20px;
+  margin: 15px 20px;
 }
 
 .sidenav-divtwt:hover {
-  background: url('../images/socmed/twitter.png') no-repeat;
-  background-size: 100px 100px;
-
-  transition: background 0.1s;
+  background: url('../images/socmed/socmed-sprite.png') no-repeat -80px -2px;
+  width: 74px;
+  height: 74px;
 }
 
 .sidenav-divfb:hover {
-  background: url('../images/socmed/facebook.png') no-repeat;
-  background-size: 69px 69px;
-  width: 69px;
-  height: 85px;
-
-  transition: background 0.1s;
+  background: url('../images/socmed/socmed-sprite.png') no-repeat -159px -2px;
+  width: 74px;
+  height: 75px;
 }
 
 .sidenav-divyt:hover {
-  background: url('../images/socmed/youtube.png') no-repeat;
-  background-size: 61px 61px;
-  width: 61px;
-  height: 81px;
-
-  transition: background 0.1s;
+  background: url('../images/socmed/socmed-sprite.png') no-repeat -2px -2px;
+  width: 77px;
+  height: 75px;
 }
 
 .sidenav-soctext {
   text-align: center;
+}
+
+
+
+/*animation and keyframes*/
+
+@keyframes necoarc {
+  from {background-position-x: -10px;}
+  to {background-position-x: -1080px;}
+}
+
+@keyframes necoarc-hover {
+  from {background-position-x: -10px;}
+  to {background-position-x: -412px;}
+}
+
+.necoarc {
+  background-image: url('../images/anim-sprite/necoarc.png');
+  width: 116px;
+  height: 190px;
+
+  position: absolute;
+  left: 95px;
+
+  animation: necoarc 0.8s steps(8) infinite;
+}
+
+.necoarc:hover {
+  background-image: url('../images/anim-sprite/necoarc.png');
+  background-position-y: -220px; 
+  width: 116px;
+  height: 190px;
+
+  position: absolute;
+  left: 95px;
+
+  animation: necoarc-hover 0.1s steps(3) infinite;
 }

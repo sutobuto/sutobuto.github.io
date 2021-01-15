@@ -18,6 +18,8 @@ h1, h2 {
 	font-family: Aquawax;
 	text-align: center;
 	position: relative;
+	left: auto;
+
 	color: white;
 }
 
